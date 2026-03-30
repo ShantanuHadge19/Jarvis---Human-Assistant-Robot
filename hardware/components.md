@@ -65,11 +65,6 @@ The JARVIS robot consists of the following hardware components:
 - IR Sensor  
   Used for line following.
 
-
-  # Block Diagram
-
-![Block Diagram](block_diagram.png)
-
 - 12V 2200mAh 80C Battery  
   Provides power to the robot.
 
@@ -78,3 +73,8 @@ The JARVIS robot consists of the following hardware components:
 
 - LM2596 Buck Converter  
   Provides regulated voltage for low-power components like Raspberry Pi, ESP32, and sensors.
+
+
+## Block Diagram
+
+![Block](block_diagram.png)
