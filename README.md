@@ -33,7 +33,13 @@ ROS2-based human assistant robot integrating voice, gesture, and remote control,
 - `ros2_nodes/` → ROS2 functionalities 
 - `embedded/` → ESP32 code  
 - `hardware/` → Components and Design  
-- `demo/` → Images and Videos  
+- `demo/` → Images and Videos
+
+---
+
+## Demo
+
+See the `demo/` folder for images and a complete video demonstration of the robot in action.
 
 ---
 
