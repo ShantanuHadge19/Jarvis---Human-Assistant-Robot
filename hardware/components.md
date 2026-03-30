@@ -1,5 +1,7 @@
 # Hardware Components
 
+---
+
 The JARVIS robot consists of the following hardware components:
 
 - Raspberry Pi 4   
@@ -20,6 +22,7 @@ The JARVIS robot consists of the following hardware components:
 - XL4015 Buck Converter
 - LM2596 Buck Converter
 
+---
 
  ## Description
 
@@ -74,6 +77,7 @@ The JARVIS robot consists of the following hardware components:
 - LM2596 Buck Converter  
   Provides regulated voltage for low-power components like Raspberry Pi, ESP32, and sensors.
 
+---
 
 ## Block Diagram
 
