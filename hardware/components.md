@@ -75,6 +75,3 @@ The JARVIS robot consists of the following hardware components:
   Provides regulated voltage for low-power components like Raspberry Pi, ESP32, and sensors.
 
 
-## Block Diagram
-
-![Block](block_diagram.png)
