@@ -206,12 +206,29 @@ class JarvisCore(Node):
             self.esp_tx_pub.publish(String(data="GESTURE:FORWARD"))
             return
 
-    # ========= LEFT PULSE =========
+
+        # ========= LEFT PULSE =========
+        if l == 1 and c == 1 and r == 0:
+            self.esp_tx_pub.publish(String(data="GESTURE:CCW"))
+            self.get_logger().info("LEFT")
+            self.busy = True
+            self.busy_until = now + 0.08
+            return
+
+        # ========= RIGHT PULSE =========
+        if l == 0 and c == 1 and r == 1:
+            self.esp_tx_pub.publish(String(data="GESTURE:CW"))
+            self.get_logger().info("RIGHT")
+            self.busy = True
+            self.busy_until = now + 0.08
+            return
+
+        # ========= LEFT PULSE =========
         if l == 1 and c == 0 and r == 0:
             self.esp_tx_pub.publish(String(data="GESTURE:CCW"))
             self.get_logger().info("LEFT")
             self.busy = True
-            self.busy_until = now + 0.3
+            self.busy_until = now + 0.15
             return
 
         # ========= RIGHT PULSE =========
@@ -219,14 +236,8 @@ class JarvisCore(Node):
             self.esp_tx_pub.publish(String(data="GESTURE:CW"))
             self.get_logger().info("RIGHT")
             self.busy = True
-            self.busy_until = now + 0.3
+            self.busy_until = now + 0.15
             return
-        
-       
-
-    
-
-    
 
 
 
